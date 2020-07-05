@@ -1,5 +1,7 @@
+//To get process env variables
+require('dotenv').config();
 
-
+//Imports
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
@@ -43,6 +45,6 @@ mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true}, f
 });
 
 //Start the server on port
-app.listen(process.env.Port, () => {
+app.listen(process.env.PORT, () => {
     console.log('Server is listening on port '+process.env.Port);
 });
