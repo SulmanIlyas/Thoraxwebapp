@@ -45,6 +45,6 @@ mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true}, f
 });
 
 //Start the server on port
-app.listen(process.env.PORT, () => {
+app.listen(process.env.Port, () => {
     console.log('Server is listening on port '+process.env.Port);
 });
