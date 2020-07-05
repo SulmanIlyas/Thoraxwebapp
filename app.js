@@ -1,7 +1,5 @@
-//To get process env variables
-require('dotenv').config();
 
-//Imports
+
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
